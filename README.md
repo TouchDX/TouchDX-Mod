@@ -37,6 +37,14 @@
 4.  选择 `Release` 配置并生成。
 5.  编译成功后即可获得所需的 `.dll` 文件。
 
+## 💖 赞助与支持
+
+如果您喜欢这个 Mod，欢迎通过**爱发电**请作者喝杯奶茶，支持后续的维护与更新：
+
+<a href="https://ifdian.net/a/YubaiNya" target="_blank">
+  <img src="https://img.shields.io/badge/%E7%88%B1%E5%8F%91%E7%94%B5-%E8%B5%9E%E5%8A%A9%E4%BD%9C%E8%80%85-946ce6?style=for-the-badge&logo=buy-me-a-coffee&logoColor=white" alt="赞助作者">
+</a>
+
 ## 贡献
 
 欢迎对本项目进行贡献！详情请参见主项目 [YubaiNya/TouchDX](https://github.com/YubaiNya/TouchDX)。
