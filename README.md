@@ -31,6 +31,15 @@
 
 欢迎对本项目进行贡献！详情请参见主项目 [TouchDX/TouchDX](https://github.com/TouchDX/TouchDX)。
 
+## 开源致谢
+
+本项目在开发过程中，使用了以下优秀的开源项目，在此对这些项目的开发者们表示感谢：
+
+*   **[MelonLoader](https://github.com/LavaGang/MelonLoader)**: 强大的通用游戏 Mod 加载器，为本 Mod 提供了运行环境。
+*   **[Harmony](https://github.com/pardeike/Harmony)**: 极其优秀的 .NET 运行时方法修补库，使本 Mod 能够拦截和修改游戏的输入逻辑。
+
+---
+
 ## 许可
 
 本项目采用 [MIT License](LICENSE) 开源许可。
