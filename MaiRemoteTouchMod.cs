@@ -6,7 +6,7 @@ using MelonLoader;
 using HarmonyLib;
 using Manager;
 
-[assembly: MelonInfo(typeof(MaiRemoteTouchMod.MaiRemoteTouchMod), "TouchDX", "1.0.0", "Yubai")]
+[assembly: MelonInfo(typeof(MaiRemoteTouchMod.MaiRemoteTouchMod), "TouchDX", "1.0.1", "Yubai")]
 
 namespace MaiRemoteTouchMod
 {
