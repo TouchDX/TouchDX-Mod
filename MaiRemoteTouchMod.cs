@@ -14,7 +14,12 @@ namespace MaiRemoteTouchMod
     {
         [System.Runtime.InteropServices.DllImport("user32.dll")]
         public static extern void keybd_event(byte bVk, byte bScan, uint dwFlags, int dwExtraInfo);
+
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        public static extern byte MapVirtualKey(uint uCode, uint uMapType);
+
         private const uint KEYEVENTF_KEYUP = 0x0002;
+        private const uint KEYEVENTF_SCANCODE = 0x0008;
 
         private TcpListener _server;
         private Thread _serverThread;
@@ -43,8 +48,9 @@ namespace MaiRemoteTouchMod
 
         private void SimulateKey(byte vk, bool isDown)
         {
-            if (isDown) keybd_event(vk, 0, 0, 0); // Down
-            else keybd_event(vk, 0, KEYEVENTF_KEYUP, 0); // Up
+            byte scanCode = MapVirtualKey(vk, 0); // MAPVK_VK_TO_VSC
+            if (isDown) keybd_event(vk, scanCode, KEYEVENTF_SCANCODE, 0); // Down
+            else keybd_event(vk, scanCode, KEYEVENTF_SCANCODE | KEYEVENTF_KEYUP, 0); // Up
         }
 
         public override void OnUpdate()
